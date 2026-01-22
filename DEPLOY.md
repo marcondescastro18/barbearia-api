@@ -5,7 +5,7 @@
 ```yaml
 name: barbearia-backend
 type: app
-repository: [seu-repo-git]
+repository: https://github.com/marcondescastro18/barbearia-api
 branch: main
 rootDirectory: /backend
 buildMethod: nixpacks
@@ -29,7 +29,7 @@ environmentVariables:
 ```yaml
 name: barbearia-frontend
 type: app
-repository: [seu-repo-git]
+repository: https://github.com/marcondescastro18/barbearia-api
 branch: main
 rootDirectory: /frontend
 buildCommand: npm install && npm run build
