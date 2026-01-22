@@ -39,10 +39,11 @@ environmentVariables:
   - VITE_API_URL=https://barbearia-backend.[seu-dominio].easypanel.host
 ```
 
-**IMPORTANTE:** 
+**⚠️ ATENÇÃO - FRONTEND:**
 - Configure APENAS a variável VITE_API_URL
-- NÃO adicione as variáveis do backend (DB_HOST, DB_PASSWORD, etc)
-- Substitua [seu-dominio] pela URL real do backend
+- **NÃO adicione variáveis do backend** (DB_HOST, DB_PASSWORD, JWT_SECRET, EVOLUTION_API_KEY, etc)
+- Substitua [seu-dominio] pela URL real do backend no EasyPanel
+- Frontend é aplicação React que roda no navegador, não precisa de credenciais do servidor
 
 ## PostgreSQL
 
