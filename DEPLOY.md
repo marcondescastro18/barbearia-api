@@ -32,14 +32,17 @@ type: app
 repository: https://github.com/marcondescastro18/barbearia-api
 branch: main
 rootDirectory: /frontend
-buildCommand: npm install && npm run build
-startCommand: npm run preview
+buildMethod: nixpacks
 port: 4173
 
 environmentVariables:
-  - VITE_API_URL=https://barbearia-backend.[dominio].easypanel.host
-  - NODE_VERSION=20
+  - VITE_API_URL=https://barbearia-backend.[seu-dominio].easypanel.host
 ```
+
+**IMPORTANTE:** 
+- Configure APENAS a variável VITE_API_URL
+- NÃO adicione as variáveis do backend (DB_HOST, DB_PASSWORD, etc)
+- Substitua [seu-dominio] pela URL real do backend
 
 ## PostgreSQL
 
